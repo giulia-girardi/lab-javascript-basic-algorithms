@@ -60,7 +60,7 @@ for (let i = 0; i <= threeParagraphs.length; i += 1) {
 console.log(numEt);
 
 // Bonus 2 
-const phraseToCheck = "No 'x' in Nixon";
+const phraseToCheck = "anna";
 
 const phraseToCheckWithoutSpecial = phraseToCheck.replace(/[`!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/g," ").toLocaleLowerCase();
 
@@ -73,6 +73,20 @@ for (let index = 0; index <= phraseToCheckWithoutSpecial.length - 1; index += 1)
     }
 }
 console.log(phraseToCheckCleaned);
+
+
+for (let index = 0; index < phraseToCheckCleaned.length / 2; index += 1) {
+    //console.log("index:" +  phraseToCheckCleaned[index])
+    for (let lastIndex = phraseToCheckCleaned.length - 1 ; lastIndex >= phraseToCheckCleaned.length / 2; lastIndex -= 1) {
+        //console.log(phraseToCheckCleaned.length, lastIndex)
+        //console.log("last-index:" +  phraseToCheckCleaned[lastIndex])
+        if (phraseToCheckCleaned[index] !== phraseToCheckCleaned[lastIndex]) {
+            //console.log("It's not a palindrome!");
+            break;
+        } 
+    }
+}
+
 
 let reversePhrase = "";
 for (let index = phraseToCheckCleaned.length - 1; index >= 0; index -= 1) {
@@ -99,17 +113,6 @@ if (result === true) {
 
 
 
-/*for (let index = 0; index < phraseToCheckCleaned.length / 2; index += 1) {
-    //console.log("index:" +  phraseToCheckCleaned[index])
-    for (let lastIndex = phraseToCheckCleaned.length - 1 ; lastIndex >= phraseToCheckCleaned.length / 2; lastIndex -= 1) {
-        //console.log(phraseToCheckCleaned.length, lastIndex)
-        //console.log("last-index:" +  phraseToCheckCleaned[lastIndex])
-        if (phraseToCheckCleaned[index] !== phraseToCheckCleaned[lastIndex]) {
-            //console.log("It's not a palindrome!");
-            break;
-        } 
-    }
-}*/
 
 
 
