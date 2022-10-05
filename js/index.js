@@ -40,3 +40,33 @@ if (hacker1 < hacker2) {
 } else {
     console.log("What?! You both have the same name?")
 }
+
+// Bonus 1
+const threeParagraphs = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla molestie hendrerit lectus, semper pharetra ligula sodales vitae. Cras ante dui, lobortis vel lorem eget, posuere mollis lacus. Mauris ut urna risus. Curabitur facilisis lorem ante, a euismod lectus consequat ut. Ut commodo, justo molestie condimentum sagittis, neque justo mollis dui, et rhoncus justo odio eget nisi. Donec congue, est et dapibus ornare, nulla est fringilla ex, non tristique tortor augue eu nibh. Etiam iaculis metus at felis sodales, nec vehicula sapien facilisis. Donec ut bibendum sem, vel pharetra neque. Vivamus rutrum libero augue, sed feugiat diam egestas et. Donec faucibus laoreet sodales. Aliquam pretium eros vitae nunc pellentesque pharetra. Suspendisse tincidunt odio et nisi suscipit maximus. Donec hendrerit leo nec condimentum porttitor. Curabitur at ligula commodo, vestibulum metus quis, finibus nisl. Cras ac dictum justo, sit amet posuere tortor. Suspendisse finibus venenatis erat, sit amet ultrices nisl sodales ac. Proin venenatis turpis at posuere rutrum. Donec vel blandit tortor. Aenean non sem molestie, tempus elit id, vulputate dolor. Maecenas nisl enim, laoreet quis nibh et, rhoncus laoreet eros. Nulla eget fringilla dui, eget auctor erat. Pellentesque condimentum erat ut sem interdum, eget malesuada ipsum tincidunt. Suspendisse condimentum libero lacus, ac scelerisque nisi efficitur sed. Nam sollicitudin interdum sapien sit amet pharetra. Vestibulum sed augue porttitor, ultrices lacus in, semper odio. Proin lorem dui, lacinia nec pretium vel, semper sit amet lorem. Pellentesque suscipit facilisis nunc, non condimentum turpis sollicitudin sed. Morbi ultricies lacinia mi, consectetur tempor risus sodales non. Aliquam sodales vel nibh euismod auctor. Nunc velit ex, blandit vel auctor a, ultrices commodo magna. Fusce massa purus, aliquet vel risus fermentum, suscipit lobortis augue. Donec maximus lectus in lacus vestibulum, sit amet lobortis tellus ultrices. Duis eu tellus tortor. Sed maximus in justo sed aliquam.";
+let numWords = 0;
+for (let index = 0; index <= threeParagraphs.length -1; index += 1) {
+    if (threeParagraphs[index] === " ") {
+        numWords += 1;
+    }
+}
+console.log(numWords);
+
+let numEt = 0;
+for (let i = 0; i <= threeParagraphs.length; i += 1) {
+        if ((threeParagraphs[i] === " ") && (threeParagraphs[i + 1] === "e") && (threeParagraphs[i + 2] === "t") && (threeParagraphs[i + 3] === " ")) {
+            numEt += 1;
+        }
+    }
+console.log(numEt);
+
+// Bonus 2 
+/*const phraseToCheck = "race car";
+let phraseToCheckWithoutSpaces = ""; 
+
+for (let index = 0; index <= phraseToCheck.lenght - 1; index +=1) {
+    phraseToCheckWithoutSpaces += phraseToCheck[index];
+    if (phraseToCheck[index] === " ") {
+        continue
+    }
+}
+console.log(phraseToCheckWithoutSpaces);*/
